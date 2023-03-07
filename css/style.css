@@ -1,0 +1,733 @@
+/**
+ * WEBSITE: https://themefisher.com
+ */
+
+html, body {
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+  color: #ffdf00;
+  padding-top: 2px;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  border: blue;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  border: blue;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: transparent;
+outline: 2px solid blue;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  outline-color: #ffdf00;
+  }
+
+/*=================================================================
+  Basic Setup
+==================================================================*/
+::-moz-selection {
+  /* Code for Firefox */
+  color: #ffdf00;
+  background: transparent;
+}
+
+::selection {
+  color: #ffdf00;
+  background: transparent;
+}
+
+ul { 
+  color: #00FF00; 
+  font-size: 1.25rem; 
+  text-align: left; 
+  line-height: 1.875rem; 
+  font-weight: lighter;
+  margin: auto;
+  padding: 0;
+}
+
+.btn {
+  background-color: transparent;
+  color: #ffdf00;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in 0s;
+  cursor: pointer;
+}
+
+.btn:focus {
+  cursor: pointer;
+}
+
+.btn-transparent {
+  border: 1px solid blue;
+  cursor: pointer;
+}
+.btn-transparent:hover, .btn-transparent:focus {
+  background-color: transparent;
+  border-color: #ffdf00;
+  box-shadow: 0.3rem 0.3rem #ffdf00;
+  transition-duration: 0.3s;
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 5px 10px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0;
+}
+
+.form-control::-webkit-input-placeholder {
+  /*  Chrome, Safari, Opera  */
+  color: #ffdf00;
+  font-family: Helvetica, sans-serif;
+  opacity: .75;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffdf00;
+  font-family: Helvetica;
+  opacity: .75;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffdf00;
+  font-family: Helvetica;
+  opacity: .75;
+}
+
+.form-control:-ms-input-placeholder {
+  /*  Internet Explorer  */
+  color: #ffdf00;
+  font-family: Helvetica;
+  opacity: .75;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
+}
+
+#home {
+  position: relative;
+}
+
+.preloader {
+  background: rgb(0, 0, 0);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sk-cube-grid {
+  width: 30px;
+  height: 30px;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #00FF00;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+.slick-slide {
+  outline: none;
+}
+
+/* CSS mfp-with-zoom class */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.pagination li {
+  margin: 5px;
+  display: inline-block;
+}
+
+/*=================================================================
+  Hero Area
+==================================================================*/
+.hero-area {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1248px) {
+  .hero-area {
+    padding: auto;
+    margin: 0;
+  }
+}
+
+.hero-area .block {
+  text-align: center;
+  z-index: 99;
+}
+
+.hero-area .block h1 {
+  font-size: 90px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-area .block h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-area .block h1 {
+    font-size: 60px;
+  }
+}
+
+.hero-area .block p {
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .hero-area .block p {
+    font-size: 15px;
+  }
+}
+
+.hero-area .block .btn-transparent {
+  margin-top: 40px;
+  padding: 14px 50px;
+  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero-area .block .btn-transparent:hover {
+  box-shadow: 0.3rem 0.3rem #ffdf00;
+  transition-duration: 0.3s;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+}
+
+.container {
+  height: fit-content;
+  padding-bottom: 10px;
+  display: grid;
+  margin: auto;
+}
+
+/*=================================================================
+  About Me section
+==================================================================*/
+.about {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width:1000px){
+  .about {
+    overflow-y:scroll;
+    margin: auto;
+  }
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  vertical-align: middle; 
+  margin-left: 12%; 
+  margin-right: 1.25vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .responsive {
+    display: none;
+  }
+}
+
+.about .content-block {
+  padding: 5% 5%;
+  width: 70vw;
+}
+
+@keyframes Hops {
+  from {transform:rotate(0deg)}
+  to {transform:rotate(2deg)}
+}
+
+.about .content-block h2:hover, 
+.about .content-block h4:hover {
+  animation: Hops 0.1s linear 0s 1;
+}
+
+@media (max-width: 480px) {
+  .about .content-block {
+    font-size: 0.5rem;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about .content-block {
+    font-size: 0.75rem;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+.about .content-block p {
+  color:#00FF00; 
+  text-align: justify; 
+  font-size: 1rem;
+}
+
+.about .content-block .perks {
+  margin-top: 5%;
+}
+
+.perks-heading {
+  color:#ffdf00; 
+  font-size: 1.5rem
+}
+
+.perks-heading:hover {
+  animation: responsiveHops 0.1s linear 0s 1;
+}
+
+.perks-body .p {
+  color:#00FF00; 
+  text-align: justify;
+  font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .perks-body .p {
+    padding: 0 0;
+    margin:auto;
+    width: 80vw;
+    font-size: 0.80rem;
+  }
+}
+
+/*=================================================================
+  Portfolio section
+==================================================================*/
+
+#portfolio {
+  background-color: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+  #portfolio {
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+.portfolio-container {
+  display: grid;
+  column-count: 3;
+  margin-left: -7vw;
+  margin-bottom: -4.6875rem;
+}
+
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 1px 1px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio-container {
+    padding: auto;
+    margin: auto;
+    display: grid;
+    column-count: 1;
+    align-content: center;
+  }
+}
+
+.portfolio-filter {
+  margin: auto;
+  margin-bottom: 40px;
+  text-align: center;
+  grid-column: auto;
+  color: #00FF00;
+  font-family: Helvetica;
+}
+
+@media (max-width: 480px) {
+  .portfolio-filter {
+    padding: auto;
+    margin: auto;
+    float: left;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio-filter {
+    padding: 1px 1px;
+    margin-bottom: 10px;
+  }
+}
+
+.portfolio-filter button {
+  border: none;
+  outline: none;
+  border: 1px solid blue;
+  background: transparent;
+  display: inline-block;
+  color: #00FF00;
+  font-size: 16px;
+  text-align: center;
+  padding: 6px 20px;
+  font-weight: 700;
+  transition: 0.3s all;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.portfolio-filter button:hover {
+  box-shadow: 0.2rem 0.2rem #ffdf00;
+  transition-delay: 0.1s;
+  transition-duration: 0.3s;
+}
+
+@media (max-width: 1000px) {
+  .portfolio-filter .button {
+    font-size: 8pt;
+    padding: 3px 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-filter .button {
+    font-size: 3pt;
+    padding: 1px 1px;
+  }
+}
+
+.portfolio-filter button.active {
+  border: 1px solid blue;
+  color: #ffdf00;
+}
+
+.portfolio-block {
+  height: 500px;
+  width: 400px;
+  display: inline-block;
+  position: relative;
+  margin: 15px;
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  .portfolio-block {
+    width: 90vw;
+    margin: 0 0 0 0;
+  }
+}
+
+.portfolio-block:hover {
+  transform: rotate3d(5, 5, 5, 5deg);
+  transition-duration: 0.5s;
+}
+
+.portfolio-block img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-block .caption {
+  margin-top: -5px;
+  color: #00FF00; 
+  font-family: Helvetica; 
+  font-size: 10.5pt; 
+  line-height: 0.45cm; 
+  text-align: justify; 
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .portfolio-block caption {
+    font-size: 7.5pt;
+  }
+}
+
+.a {
+  cursor: pointer;
+}
+
+/*=================================================================
+ Contact
+==================================================================*/
+
+.contact-me {
+  padding-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .contact-me {
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services ul {
+    padding: 5px 5px;
+    margin: auto;
+    font-size: 0.3rem;
+  }
+}
+
+.contact-form .form-control {
+  font-family: Helvetica;
+  color: #00FF00;
+  background-color: transparent;
+  border: 1px solid blue;
+  border-radius: 5px;
+  height: 7.5vh;
+  width: 35vw;
+}
+
+@media (max-width: 480px) {
+  .contact-form .form-control {
+    width: 75vw
+  }
+}
+
+.contact-form textarea.form-control {
+  padding: 10px;
+  height: 120px;
+}
+
+#message::-webkit-scrollbar {
+  width: 7px;
+}
+
+#message::-webkit-scrollbar-thumb:hover {
+  outline-color: #00FF00;
+  }
+
+#contact-submit {
+  font-family:Helvetica;
+  font-weight: lighter;
+  border: 2px solid blue;
+  background: blue;
+  padding: 12px 0;
+  height: 7.5vh;
+  width: 35vw;
+  margin-bottom: 5vh; 
+}
+
+@media (max-width: 480px) {
+  #contact-submit {
+    font-weight: normal;
+    width: 75vw;
+  }
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+#contact-submit:hover {
+  border-color: #ffdf00;
+  background-color: transparent;
+  color: #ffdf00;
+  box-shadow: 0.3rem 0.3rem #ffdf00;
+  transition-duration: 0.3s;
+  }
+
+.feedback {
+  font-size: 1.25rem;
+  font-family: Helvetica, sans-serif;
+  color: #00FF00;
+  transition: opacity 0.25s ease-in-out;
+  width: 75vw;
+  margin-left: auto;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 480px) {
+  .feedback {
+    font-size: 0.50rem
+  }
+}
