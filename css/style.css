@@ -607,11 +607,6 @@ ul {
   }
 }
 
-.portfolio-block:hover {
-  transform: rotate3d(5, 5, 5, 5deg);
-  transition-duration: 0.5s;
-}
-
 .portfolio-block img {
   width: 100%;
   height: 100%;
