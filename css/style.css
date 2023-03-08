@@ -610,6 +610,7 @@ ul {
 .portfolio-block img {
   width: 100%;
   height: 100%;
+  margin-bottom: 2%;
 }
 
 .portfolio-block .caption {
@@ -706,10 +707,13 @@ ul {
 #contact-submit:hover {
   border-color: #ffdf00;
   background-color: transparent;
-  color: #ffdf00;
   box-shadow: 0.3rem 0.3rem #ffdf00;
   transition-duration: 0.3s;
   }
+
+#contact-submit:hover {
+  color: #ffdf00;
+}
 
 .feedback {
   font-size: 1.25rem;
