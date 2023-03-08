@@ -413,14 +413,15 @@ ul {
   width: 70vw;
 }
 
-@keyframes Hops {
+@keyframes hops {
   from {transform:rotate(0deg)}
   to {transform:rotate(2deg)}
 }
 
 .about .content-block h2:hover, 
 .about .content-block h4:hover {
-  animation: Hops 0.1s linear 0s 1;
+  animation: hops 0.1s linear 0s 1;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 480px) {
@@ -455,7 +456,8 @@ ul {
 }
 
 .perks-heading:hover {
-  animation: responsiveHops 0.1s linear 0s 1;
+  animation: hops 0.1s linear 0s 1;
+  animation-fill-mode: forwards;
 }
 
 .perks-body .p {
@@ -613,6 +615,17 @@ ul {
   margin-bottom: 2%;
 }
 
+@keyframes rotate {
+  from {transform:rotate3d(0, 0, 0, 0deg)}
+  to {transform:rotate3d(5, 5, 5, 5deg)}
+}
+
+.portfolio-block img:hover {
+  animation: rotate 0.25s linear 0s 1;
+  box-shadow: 2% 2% 2% blue;
+  animation-fill-mode: forwards;
+}
+
 .portfolio-block .caption {
   margin-top: -5px;
   color: #00FF00; 
@@ -629,10 +642,6 @@ ul {
   }
 }
 
-.a {
-  cursor: pointer;
-}
-
 /*=================================================================
  Contact
 ==================================================================*/
@@ -645,6 +654,11 @@ ul {
   .contact-me {
     padding-top: 35px;
   }
+}
+
+#contact-me h2:hover {
+  animation: hops 0.1s linear 0s 1;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 480px) {
