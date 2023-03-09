@@ -622,7 +622,6 @@ ul {
 
 .portfolio-block img:hover {
   animation: rotate 0.25s linear 0s 1;
-  box-shadow: 2% 2% 2% blue;
   animation-fill-mode: forwards;
 }
 
@@ -685,9 +684,14 @@ ul {
   }
 }
 
+.contact-form textarea {
+  min-height: 15vh;
+  max-height: 35vh;
+}
+
 .contact-form textarea.form-control {
   padding: 10px;
-  height: 120px;
+  height: 20vh;
 }
 
 #message::-webkit-scrollbar {
