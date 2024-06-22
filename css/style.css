@@ -600,6 +600,7 @@ ul {
   position: relative;
   margin: 15px;
   margin-top: 5px;
+  pointer-events: none;
 }
 
 @media (max-width: 480px) {
