@@ -69,7 +69,7 @@ Welcome
  	<div class="block">
  		<h1 style="color:#00FF00;">Welcome to My Data Science Portfolio!</h1>
  		<p style="color:#00FF00;">The portfolio showcases a variety of projects that include data wrangling, exploratory analysis, data mining, advanced statistical techniques, psychometric analysis, predictive modeling with machine learning algorithms, and data visualization. 
-			The datasets used for these projects come from various domains, such as human behavior, marketing, finance, sports analytics, the entertainment industry, demographics, and more.
+			The datasets used for these projects come from various domains, such as human behavior, marketing, finance, sports analytics, various industries, demographics, and more.
 			<br>You can take a walk through the forest of my work below if you are interested.</p>
  		<a href="#portfolio" class="btn btn-transparent smooth-scroll" style="color:#ffdf00; font-family: Helvetica; font-size: 2.5vh; border-color: blue; margin-top: 12.5vh;">Of course I am interested, that is why I am here. In fact, I can't wait to check it out.</a>
  	</div>
@@ -149,7 +149,7 @@ Welcome
 					<button class="btn-transparent" type="button" data-filter="behavior">Human Behavior</button>
 					<button class="btn-transparent" type="button" data-filter="mf">Marketing & Finance</button>
 					<button class="btn-transparent" type="button" data-filter="sports">Sports</button>
-					<button class="btn-transparent" type="button" data-filter="entertainment">Entertainment Industry</button>
+					<button class="btn-transparent" type="button" data-filter="industry">Industry</button>
 					<button class="btn-transparent" type="button" data-filter="demographics">Demographics</button>
 					<button class="btn-transparent" type="button" data-filter="misc">Miscellaneous</button>
 				</div>
@@ -161,15 +161,15 @@ Welcome
 				<div class="portfolio-block">
 					<a class="caption wow fadeIn" data-wow-duration="500ms" href="https://htmlpreview.github.io/?https://gitfront.io/r/user-5533619/WHwtSS4gTTi5/Portfolio-projects/raw/bankch.html" target="_blank"> <img src="images/portfolio/portfolio-1.jpg">
 						<h4 class="caption wow fadeIn" data-wow-duration="750ms" style="color: #ffdf00; font-weight: bold; font-size: 1.0032rem;">Predictive Modeling for Bank Customer Churn</h4>
-						<p class="caption wow fadeIn" data-wow-duration="1000ms">This project, conducted in R, uses the dataset about 10,000 customers of a particular bank with branches in France, Germany, and Spain. I did feature engineering, conducted EDA, and selected 
-							predictors of customer churn using random forest algorithm. To address the class imbalance in the outcome variable, I employed a combination of undersampling and oversampling, using the ROSE algorithm. Then I trained 
-							a blending ensemble comprising random forest, C5.0 tree, and support vector machine with Gaussian radial basis kernel function for binary classification. To expedite computation, I parallelized the procedure. 
-							The ensemble performed excellently in churn prediction, as indicated by accuracy, sensitivity, specificity, and AUC in excess of .95 on test dataset.
+						<p class="caption wow fadeIn" data-wow-duration="1000ms">This project, conducted in R, uses the dataset on 10,000 bank customers. I did feature engineering, conducted EDA, and selected 
+							predictors of customer churn using random forest algorithm. To address the class imbalance in the outcome variable, I employed the oversampling of the minority class and set the optimal decision boundary threshold via Youden’s index. Then I trained 
+							a stacking ensemble comprising two variants of random forest, C5.0 tree, extreme gradient boosting tree, gradient boosting machine, adaptive boosting, and support vector machine with radial basis function kernel for binary classification.The ensemble 
+							performed well in churn prediction, as indicated by accuracy, balanced accuracy, sensitivity, and specificity around .75 and above on the test dataset.
 						</p></a> 
 				</div>
 			</div>
             
-			<div class="filtr-item" data-category="misc">
+			<div class="filtr-item" data-category="industry">
 				<div class="portfolio-block">
 					<a class="caption wow fadeIn" data-wow-duration="500ms" href="https://htmlpreview.github.io/?https://gitfront.io/r/user-5533619/WHwtSS4gTTi5/Portfolio-projects/raw/aaex.html" target="_blank"> <img src="images/portfolio/portfolio-2.jpg">
 						<h4 class="caption wow fadeIn" data-wow-duration="750ms" style="color: #ffdf00; font-weight: bold; font-size: 1.0032rem;">A Comprehensive Analysis of Automobile Extinction</h4>
@@ -214,8 +214,8 @@ Welcome
 						<h4 class="caption wow fadeIn" data-wow-duration="750ms" style="color: #ffdf00; font-weight: bold; font-size: 1.0032rem;">Fraud detection in Ethereum Transactions Data</h4>
 						<p class="caption wow fadeIn" data-wow-duration="750ms">This project, conducted in R, uses the dataset on 9,841 known fraudulent and non-fraudulent transactions provided by Ethereum. Initially, data preparation and feature engineering were conducted, 
 							revealing that patterns of missing data could serve as an effective means of identifying potential fraud. In the following analysis, I used random forest algorithm for predictor selection. Then I used a blending ensemble of 
-							random forest, C5.0 tree, gradient boosting machine, and k-nearest neighbors for the binary classification problem. To address the class imbalance 
-							in the outcome variable, I employed the SMOTE algorithm. The ensemble performed excellently in fraud detection, as indicated by accuracy and specificity in excess of .95, sensitivity approaching .90, and AUC in excess of .90.
+							random forest, C5.0 tree, gradient boosting machine, and k-nearest neighbors for the binary classification problem. To address the class imbalance in the outcome variable, I employed the SMOTE algorithm. The ensemble demonstrated 
+							exceptional performance in fraud detection, achieving accuracy, balanced accuracy, sensitivity, and specificity rates exceeding .90.
 						</p></a> 
 				</div>
 			</div>	
@@ -259,7 +259,7 @@ Welcome
 				</div>
 			</div>	
 			
-			<div class="filtr-item" data-category="entertainment">
+			<div class="filtr-item" data-category="industry">
 				<div class="portfolio-block">
 					<a class="caption wow fadeIn" data-wow-duration="500ms" href="https://htmlpreview.github.io/?https://gitfront.io/r/user-5533619/WHwtSS4gTTi5/Portfolio-projects/raw/vgameclust.html" target="_blank"> <img src="images/portfolio/portfolio-8.jpg"> 
 						<h4 class="caption wow fadeIn" data-wow-duration="750ms" style="color: #ffdf00; font-weight: bold; font-size: 1.0032rem;">Video Games Clustering and CA</h4>
@@ -345,6 +345,42 @@ Welcome
 				</div>
 			</div>
 		
+			<div class="filtr-item" data-category="behavior">
+				<div class="portfolio-block">
+					<a class="caption wow fadeIn" data-wow-duration="500ms" href="https://htmlpreview.github.io/?https://gitfront.io/r/user-5533619/WHwtSS4gTTi5/Portfolio-projects/raw/SMSSpam.html" target="_blank"> <img src="images/portfolio/portfolio-15.jpg">
+							<h4 class="caption wow fadeIn" data-wow-duration="750ms" style="color: #ffdf00; font-weight: bold; font-size: 1.0032rem;">SMS Spam - NLP and Predictive Modeling</h4>
+							<p class="caption wow fadeIn" data-wow-duration="750ms">This project, conducted in R, uses a dataset on consists of 5,574 SMS messages labelled as either spam or not spam. After data preparation, which involved removing stopwords, 
+								stemming, and tokenizing into unigrams, bigrams, and trigrams, as well as feature engineering, I reduced the number of dimensions by applying the minimum frequency rule. To address the imbalance in the outcome variable, the blending
+								ensemble consisted of algorithms that are robust against the imbalance, such as random forest and stochastic gradient boost machine. The final model exhibited excellent performance, as indicated by accuracy, balanced accuracy,
+								sensitivity, and specificity from .89 to .97 on the test dataset.
+							</p></a> 
+				</div>
+			</div>
+
+			<div class="filtr-item" data-category="industry">
+				<div class="portfolio-block">
+					<a class="caption wow fadeIn" data-wow-duration="500ms" href="https://htmlpreview.github.io/?https://gitfront.io/r/user-5533619/WHwtSS4gTTi5/Portfolio-projects/raw/wiqu.html" target="_blank"> <img src="images/portfolio/portfolio-16.jpg">
+							<h4 class="caption wow fadeIn" data-wow-duration="750ms" style="color: #ffdf00; font-weight: bold; font-size: 1.0032rem;">Wine Quality Prediction - Deep Learning</h4>
+							<p class="caption wow fadeIn" data-wow-duration="750ms">This project, conducted in R, uses a dataset of 4,898 red and white Portuguese wines. After data preparation and feature engineering, which involved dichotomizing the outcome variable 
+								to classify wines as excellent or non-excellent followed by ADASYN (Adaptive Synthetic Sampling) for data augmentation to address the resulting imbalance and the application of random forest algorithm for predictor selection. Afterward, 
+								a deep learning model was built using Keras. The neural network, with a fully connected feedforward architecture, was used to handle complex relationships among physicochemical predictors. 
+								The ensemble performed well on the test set, achieving strong accuracy, balanced accuracy, precision, and recall, even with this somewhat limited set of predictors.
+							</p></a> 
+				</div>
+			</div>
+
+			<div class="filtr-item" data-category="industry">
+				<div class="portfolio-block">
+					<a class="caption wow fadeIn" data-wow-duration="500ms" href="https://htmlpreview.github.io/?https://gitfront.io/r/user-5533619/WHwtSS4gTTi5/Portfolio-projects/raw/mcav.html" target="_blank"> <img src="images/portfolio/portfolio-17.jpg">
+							<h4 class="caption wow fadeIn" data-wow-duration="750ms" style="color: #ffdf00; font-weight: bold; font-size: 1.0032rem;">Aviation - Risk Analysis with MC Simulation</h4>
+							<p class="caption wow fadeIn" data-wow-duration="750ms">This project, conducted in R, uses a Monte Carlo (MC) simulation approach to model the flight paths of 50 aircraft in a congested airspace. It estimates the probability of near-misses 
+								or collisions under varying conditions such as aircraft density, speed, and flight patterns. Key steps include defining aircraft and airspace parameters, generating random flight paths, and simulating movement over time. Near-misses were 
+								detected by calculating the Euclidean distance between aircraft at each time point, identifying collisions when aircraft breached a safety threshold. Results are visualized through flight path plots, and collision probability is calculated. 
+								The findings highlight the risks of congested airspace and suggest extending the simulation to include factors like aircraft type or weather conditions.
+							</p></a> 
+				</div>
+			</div>
+
 		</div>
 	  </div>	
 	</div> <!-- end container -->
@@ -360,36 +396,32 @@ Welcome
 				<div class="text-center wow fadeIn" data-wow-duration="500ms">
 					<h2 style="color: #ffdf00; font-size: 2.1875rem; font-family: Helvetica; padding-top: 10vh;"> I offer my expertise in the following areas for freelance projects:</h2>
 						<ul class="services" style="list-style-type: circle; line-height: 2.1875rem; padding-bottom: 0.5cm; padding-top: 1vh;">
-
-<li>Data wrangling/Cleaning/Preparation/Munging</li>
-<li>Data visualization</li>
-<li>Exploratory data analysis</li>
-<li>Data analysis on datasets from industry or academia</li>
-<li>Psychometric analysis</li>
-<li>Experiment design</li>
-<li>Data mining</li>
-<li>Clustering</li>
-<li>Predictive modeling</li>
-<li>Time series forecasting</li>
-<li>R Shiny app development</li>
-<li>Pre-submission peer-review of your scientific paper in social sciences</li>
-</ul>
+							<li>Data Preprocessing (Cleaning, Wrangling, Feature Engineering, etc.)</li>
+							<li>Data Visualization & Exploratory Analysis</li>
+							<li>Statistical Modeling & Hypothesis Testing</li>
+							<li>Time Series Forecasting</li>
+							<li>Clustering & Anomaly Detection</li>
+							<li>Predictive Analytics & Machine Learning</li>
+							<li>Deep Learning & Neural Networks</li>
+							<li>Natural Language Processing (NLP)</li>
+							<li>Monte Carlo Simulation</li>
+							<li>Psychometric Services</li>
+							<li>R Shiny App Development</li>
+							<li>Pre-submission Peer Review of Scientific Papers</li>
+						</ul>
 
 <h2 style="color: #ffdf00; font-size: 2.1875rem; font-family: Helvetica; padding-bottom: 1vh; padding-top: 1vh;">Techniques in my toolkit:</h2>
-<ul class="services" style="list-style-type: circle;">
-<li> Regression analysis (linear, polynomial, logistic, Poisson, quasi-Poisson, negative binomial, quantile, robust, partial least squares, principal components regression)</li>
-<li> Non-parametric statistical tests (Sign Test, Wilcoxon Signed-Rank Test, Mood's Median Test, Mann-Whitney U Test, Friedman Test, Kruskal-Wallis Test, McNemar's Test, Fisher's Exact Test, Cochran's Q Test, Chi-square Test, Barnard's Test)</li>
-<li> (M)AN(C)OVA</li>
-<li> Monte Carlo Simulation</li>
-<li> Cluster analysis (k-means, k-medoids, Gaussian mixture modeling, fuzzy, hierarchical, (H)DBSCAN, OPTICS)</li>
-<li> Latent variable modeling (FA, path analysis, full SEM, LCA, LPA)</li>
-<li> Multilevel modeling (regression, FA, SEM)</li>
-<li> Correspondence analysis (multiple, canonical, detrended)</li>
-<li> Discriminant analysis (linear, quadratic, flexible, shrinkage)</li>
-<li> Survival analysis (Kaplan-Meier, Cox proportional Hazards)</li>
-<li> Time series analysis and forecasting (univariate-(S)AR(F)(I)(MA)(X) & (G)ARCH, multivariate-VAR, VECM)</li>
-<li> Machine learning (shrinkage regression, decision trees, random forests, GBM, XGBoost, k-NN, SVM, naive Bayes classifier, neural networks, market basket analysis, and more)</li>
-</ul>
+	<ul class="services" style="list-style-type: circle;">
+		<li><strong>Basic Statistical Tests:</strong> Non-parametric (Wilcoxon, Kruskal-Wallis, McNemar, Fisher's Exact), ANOVA/MANOVA</li>
+		<li><strong>Regression Analysis:</strong> Linear, Logistic, Poisson, Negative Binomial, Quantile, Robust</li>
+		<li><strong>Latent Variable Models:</strong> Factor Analysis, Path Analysis, SEM, LCA, LPA</li>
+		<li><strong>Multilevel & Mixed Modeling:</strong> Hierarchical Regression, SEM, Bayesian Models</li>
+		<li><strong>Survival Analysis:</strong> Kaplan-Meier, Cox Proportional Hazards</li>
+		<li><strong>Time Series Modeling:</strong> (S)ARIMA, GARCH, VAR, VECM</li>
+		<li><strong>Clustering Techniques:</strong> k-Means, Gaussian Mixture Models, Hierarchical, (H)DBSCAN, OPTICS</li>
+		<li><strong>Machine Learning:</strong> Decision Trees, Random Forests, Gradient Boosting Machines, SVM, Neural Networks</li>
+		<li><strong>Psychometric Techniques:</strong> CTT, IRT, Scale Development and Validation, Test Equating and Linking</li>
+	</ul>
 
 		</div>
 				<!-- /section title -->
